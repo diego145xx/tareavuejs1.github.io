@@ -1,9 +1,23 @@
 <template>
   <div id="app">
+    <!-- Barra de navegación con enlaces a diferentes rutas -->
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <ul class="nav">
+  <li class="nav-item">
+    <router-link to="/">Home</router-link> |
+  </li>
+  <li class="nav-item">
+    <router-link to="/addtask">Agregar Tarea</router-link> 
+  </li>
+  <li class="nav-item">
+    <router-link to="/tasklist">Lista de Tareas</router-link>
+  </li>
+  <li class="nav-item">
+    <router-link to="/combinedview">Vista Combinada</router-link>
+  </li>
+</ul>
     </nav>
+    <!-- Aquí se cargará el componente correspondiente a la ruta seleccionada -->
     <router-view/>
   </div>
 </template>
