@@ -5,4 +5,4 @@ module.exports = defineConfig({
   ? '/gestorvue/'
   : '/'
 })
-//diego//
+//diego//1//
